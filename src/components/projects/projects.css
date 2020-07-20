@@ -1,0 +1,21 @@
+.projects-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 1px 1px;
+  grid-template-areas: '. . .' '. . .';
+}
+
+.projects-title {
+  position: absolute;
+  left: 20%;
+  top: 10%;
+}
+
+.work-pic {
+  display: inline-block;
+  max-width: 30%;
+  height: auto;
+  padding-right: 2%;
+  padding-bottom: 2%;
+}

@@ -3,12 +3,13 @@ import React, { Fragment } from 'react';
 const Sidebar = () => {
   return (
     <Fragment>
-      <header class='header navbar-expand-md' role='banner'>
-        <h1 class='logo'>
+      <header className='header navbar-expand-md' role='banner'>
+        <div className='text-center'>
+          <img className='profile-pic' src='/portfolio-pic.jpg' alt='' />
+        </div>
+        <h1 className='logo'>
           {/* eslint-disable-next-line */}
-          <a href=''>
-            Jake <span>Diorio</span>
-          </a>
+          Jake Diorio
         </h1>
         <button
           className='navbar-toggler'
@@ -26,23 +27,23 @@ const Sidebar = () => {
             >
               <li>
                 {/* eslint-disable-next-line */}
-                <a href=''>About</a>
+                <a href='/'>Home</a>
               </li>
               <li>
                 {/* eslint-disable-next-line */}
-                <a href=''>Work</a>
+                <a href='/about'>About</a>
+              </li>
+              <li>
+                {/* eslint-disable-next-line */}
+                <a href='/my-work'>Work</a>
               </li>
               <li>
                 {/* eslint-disable-next-line */}
                 <a href=''>Contact</a>
               </li>
-              <li>
-                {/* eslint-disable-next-line */}
-                <a href=''>Blog</a>
-              </li>
             </nav>
           </ul>
-          <ul class='social-links list-inline unstyled list-hover-slide'>
+          <ul class='social-links  unstyled list-hover-slide text-center'>
             <li>
               {/* eslint-disable-next-line */}
               <a href='#'>Twitter</a>
@@ -50,14 +51,6 @@ const Sidebar = () => {
             <li>
               {/* eslint-disable-next-line */}
               <a href='#'>Google+</a>
-            </li>
-            <li>
-              {/* eslint-disable-next-line */}
-              <a href='#'>GitHub</a>
-            </li>
-            <li>
-              {/* eslint-disable-next-line */}
-              <a href='#'>CodePen</a>
             </li>
           </ul>
         </div>
