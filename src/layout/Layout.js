@@ -4,25 +4,30 @@ import Nav from '../components/Sidebar';
 import About from '../components/about';
 import AboutMe from '../components/aboutMe';
 import Ribbon from '../components/ribbon/ribbon';
+import Rain from '../components/rain';
 import Projects from '../components/projects/projects';
+import { CSSTransition, TransitionGroup } from 'react-transition-group';
 
 const Layout = () => {
   return (
-    <Fragment>
-      <Router>
-        <div>
-          <Nav />
-          <Ribbon />
-          <Switch>
-            <div className='main-body'>
-              <Route exact path='/' render={About} />
-              <Route exact path='/about' render={AboutMe} />
-              <Route exact path='/my-work' render={Projects} />
-            </div>
+    <Router>
+      <Nav />
+      <Ribbon />
+      <Rain />
+      <TransitionGroup component={null}>
+        <CSSTransition
+          key={window.location.key}
+          in={true}
+          classNames='slide-in'
+        >
+          <Switch location={window.location}>
+            <Route exact path='/' component={About} />
+            <Route exact path='/about' component={AboutMe} />
+            <Route exact path='/my-work' component={Projects} />
           </Switch>
-        </div>
-      </Router>
-    </Fragment>
+        </CSSTransition>
+      </TransitionGroup>
+    </Router>
   );
 };
 

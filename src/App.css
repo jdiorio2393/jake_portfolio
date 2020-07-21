@@ -4,16 +4,17 @@ body,
 .App {
   height: 100%;
   background: #000000;
-  background-image: linear-gradient(
+  /* background-image: linear-gradient(
       to right,
-      hsla(0, 0%, 0%, 0.78),
-      hsla(0, 0%, 0%, 0.75)
+      hsla(0, 0%, 0%, 0.836),
+      hsla(0, 0%, 0%, 0.836)
     ),
-    url('/pic2.jpg');
+    url('/pic2.jpg'); */
   background-size: cover;
   background-position: center;
   height: 100%;
-  overflow: auto;
+  overflow-x: hidden;
+  overflow-y: auto;
 }
 *,
 :before,
@@ -24,6 +25,14 @@ body,
 * {
   padding: 0;
   margin: 0;
+}
+
+a > .nav-text {
+  display: none;
+}
+
+a > .nav-text:hover {
+  display: inline-block;
 }
 
 .unstyled {
@@ -47,14 +56,14 @@ body,
   left: 0;
   top: 0;
   bottom: 0;
-  width: 14.5em;
+  width: 10.5em;
   background: #101010;
   z-index: 999;
 }
 
 .logo {
   text-transform: Capitalize;
-  font: 300 2em 'Source Sans Pro', Helvetica, Arial, sans-serif;
+  font: 300 1em 'Source Sans Pro', Helvetica, Arial, sans-serif;
   text-align: center;
   padding: 0;
   margin-top: 2rem;
@@ -83,10 +92,10 @@ body,
   border-top: solid 1px #3c3735;
 }
 .main-nav li {
-  border-bottom: solid 1px #3c3735;
+  /* border-bottom: solid 1px #3c3735; */
 }
 .main-nav a {
-  padding: 1.1em 0;
+  padding: 1.5em 0;
   color: #dfdbd9;
   font: 400 1.125em 'Source Sans Pro', Helvetica, Arial, sans-serif;
   text-align: center;

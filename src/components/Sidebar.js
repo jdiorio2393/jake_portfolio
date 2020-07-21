@@ -27,23 +27,36 @@ const Sidebar = () => {
             >
               <li>
                 {/* eslint-disable-next-line */}
-                <a href='/'>Home</a>
+                <a href='/'>
+                  <i className='fas fa-home' aria-hidden='true'></i>
+                  {/* <p>about</p> */}
+                </a>
               </li>
               <li>
                 {/* eslint-disable-next-line */}
-                <a href='/about'>About</a>
+
+                <a href='/about'>
+                  <i className='fas fa-user' aria-hidden='true'></i>
+                </a>
               </li>
               <li>
                 {/* eslint-disable-next-line */}
-                <a href='/my-work'>Work</a>
+                <a href='/my-work'>
+                  <i className='fas fa-laptop-code' aria-hidden='true'></i>
+                </a>
               </li>
               <li>
                 {/* eslint-disable-next-line */}
-                <a href=''>Contact</a>
+                <a href=''>
+                  <i
+                    className='fas fa-envelope-open-text'
+                    aria-hidden='true'
+                  ></i>
+                </a>
               </li>
             </nav>
           </ul>
-          <ul class='social-links  unstyled list-hover-slide text-center'>
+          <ul className='social-links  unstyled list-hover-slide text-center'>
             <li>
               {/* eslint-disable-next-line */}
               <a href='#'>Twitter</a>
