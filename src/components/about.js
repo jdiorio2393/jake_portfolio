@@ -14,7 +14,7 @@ const About = () => {
         <div className='name'>{`<h1>`}</div> */}
         <h1 data-text='Jake Diorio'>
           <span style={{ fontSize: '5rem' }}>
-            My name is <span style={{ color: '#b10000' }}>Jake.</span>
+            My name is <span style={{ color: '#bd0000' }}>Jake.</span>
           </span>{' '}
           <br></br> I'm a web developer & designer based in NY.
         </h1>
@@ -30,6 +30,15 @@ const About = () => {
               style={{ letterSpacing: '.2rem' }}
             >
               Check out my github
+            </a>
+            <a
+              className='gitbtn'
+              href='https://github.com/jdiorio2393'
+              target='_blank'
+              rel='noopener noreferrer'
+              style={{ letterSpacing: '.2rem' }}
+            >
+              View my work
             </a>
           </h3>
           <div className='title'>{`</button>`}</div>

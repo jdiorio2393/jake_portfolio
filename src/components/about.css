@@ -95,9 +95,24 @@
 }
 
 a.gitbtn {
-  background-color: #b10000;
+  border: solid 1px#bd0000;
+  background-color: #ffffff00;
+  color: #bd0000 !important;
   padding: 2%;
-  border-radius: 5px;
+  margin-right: 5%;
+  transition: all 1s;
+}
+
+a.gitbtn:hover {
+  color: white !important;
+  text-decoration: none !important;
+  background-color: #b10000;
+  /* border: none; */
+  transition: border 0px 1s ease;
+}
+
+a.gitbtn:active {
+  transform: translateY(-1px);
 }
 
 .github-link > a:hover {

@@ -9,7 +9,7 @@ const AboutMe = () => {
       <div className='aboutMe'>
         <div className='title'>{`<h1>`}</div>
         <h1 data-text='Jake Diorio'>
-          <span style={{ fontSize: '5rem', color: 'red' }}>About Me</span>
+          <span style={{ fontSize: '5rem', color: '#bd0000' }}>About Me</span>
         </h1>
         <div className='title'>{`</h1>`}</div>
 

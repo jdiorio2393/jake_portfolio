@@ -29,7 +29,7 @@ const Sidebar = () => {
                 {/* eslint-disable-next-line */}
                 <a href='/'>
                   <i className='fas fa-home' aria-hidden='true'></i>
-                  {/* <p>about</p> */}
+                  <p style={{ display: 'none' }}>about</p>
                 </a>
               </li>
               <li>
