@@ -21,20 +21,71 @@
   gap: 13px 0px;
   align-items: center;
   grid-template-areas: '. . .' '. . .';
+  width: 80%;
 }
 
+.pic-container2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 13px 0px;
+  align-items: center;
+  width: 80%;
+}
+
+/* first picture */
+
 .pic-div1 {
-  background-image: url('/projects/stellarledgers.png');
+  background: linear-gradient(
+      to right,
+      hsla(0, 0%, 0%, 0%),
+      hsla(0, 0%, 0%, 0%)
+    ),
+    url('/projects/stellarledgers.png');
   background-size: cover;
-  height: 9rem;
+  height: 10rem;
   width: 95%;
 }
 
 .pic-div1:hover {
-  filter: brightness(40%);
+  background: linear-gradient(
+      to right,
+      hsla(0, 0%, 0%, 0.78),
+      hsla(0, 0%, 0%, 0.75)
+    ),
+    url('/projects/stellarledgers.png');
+  background-size: cover;
+  transition: all 1s ease;
 }
 
 .pic-div1:hover .text {
+  opacity: 1;
+}
+
+/* second picture */
+.pic-div2 {
+  background: linear-gradient(
+      to right,
+      hsla(0, 0%, 0%, 0%),
+      hsla(0, 0%, 0%, 0%)
+    ),
+    url('/projects/lookout.png');
+  background-size: cover;
+  height: 10rem;
+  width: 95%;
+}
+
+.pic-div2:hover {
+  background: linear-gradient(
+      to right,
+      hsla(0, 0%, 0%, 0.78),
+      hsla(0, 0%, 0%, 0.75)
+    ),
+    url('/projects/lookout.png');
+  background-size: cover;
+  transition: all 1s ease;
+}
+
+.pic-div2:hover .text {
   opacity: 1;
 }
 
@@ -43,35 +94,202 @@
   opacity: 0;
 }
 
-.pic-div2 {
-  background-image: url('/projects/lookout.png');
-  background-size: cover;
-  height: 9rem;
-  width: 95%;
-}
+/* third picture */
 .pic-div3 {
-  background-image: url('/projects/yellowdoor.png');
+  background: linear-gradient(
+      to right,
+      hsla(0, 0%, 0%, 0%),
+      hsla(0, 0%, 0%, 0%)
+    ),
+    url('/projects/yellowdoor.png');
   background-size: cover;
-  height: 9rem;
+  height: 10rem;
   width: 95%;
 }
+
+.pic-div3:hover {
+  background: linear-gradient(
+      to right,
+      hsla(0, 0%, 0%, 0.78),
+      hsla(0, 0%, 0%, 0.75)
+    ),
+    url('/projects/yellowdoor.png');
+  background-size: cover;
+  transition: all 1s ease;
+}
+
+.pic-div3:hover .text {
+  opacity: 1;
+}
+
+.text {
+  margin-top: 20%;
+  opacity: 0;
+}
+
+/* fourth picture */
 .pic-div4 {
-  background-image: url('/projects/mediakeys.png');
+  background: linear-gradient(
+      to right,
+      hsla(0, 0%, 0%, 0%),
+      hsla(0, 0%, 0%, 0%)
+    ),
+    url('/projects/mediakeys.png');
   background-size: cover;
-  height: 9rem;
+  height: 10rem;
   width: 95%;
 }
+
+.pic-div4:hover {
+  background: linear-gradient(
+      to right,
+      hsla(0, 0%, 0%, 0.78),
+      hsla(0, 0%, 0%, 0.75)
+    ),
+    url('/projects/mediakeys.png');
+  background-size: cover;
+  transition: all 1s ease;
+}
+
+.pic-div4:hover .text {
+  opacity: 1;
+}
+
+.text {
+  margin-top: 20%;
+  opacity: 0;
+}
+
+/* fifth picture */
 .pic-div5 {
-  background-image: url('/projects/gmtb.png');
+  background: linear-gradient(
+      to right,
+      hsla(0, 0%, 0%, 0%),
+      hsla(0, 0%, 0%, 0%)
+    ),
+    url('/projects/gmtb.png');
   background-size: cover;
-  height: 9rem;
+  height: 10rem;
   width: 95%;
 }
-.pic-div6 {
-  background-image: url('/projects/snrcreative.png');
+
+.pic-div5:hover {
+  background: linear-gradient(
+      to right,
+      hsla(0, 0%, 0%, 0.78),
+      hsla(0, 0%, 0%, 0.75)
+    ),
+    url('/projects/gmtb.png');
   background-size: cover;
-  height: 9rem;
+  transition: all 1s ease;
+}
+
+.pic-div5:hover .text {
+  opacity: 1;
+}
+
+.text {
+  margin-top: 20%;
+  opacity: 0;
+}
+
+/* sixth picture */
+.pic-div6 {
+  background: linear-gradient(
+      to right,
+      hsla(0, 0%, 0%, 0%),
+      hsla(0, 0%, 0%, 0%)
+    ),
+    url('/projects/snrcreative.png');
+  background-size: cover;
+  height: 10rem;
   width: 95%;
+}
+
+.pic-div6:hover {
+  background: linear-gradient(
+      to right,
+      hsla(0, 0%, 0%, 0.78),
+      hsla(0, 0%, 0%, 0.75)
+    ),
+    url('/projects/snrcreative.png');
+  background-size: cover;
+  transition: all 1s ease;
+}
+
+.pic-div6:hover .text {
+  opacity: 1;
+}
+
+.text {
+  margin-top: 20%;
+  opacity: 0;
+}
+
+/* seventh picture */
+.pic-div7 {
+  background: linear-gradient(
+      to right,
+      hsla(0, 0%, 0%, 0%),
+      hsla(0, 0%, 0%, 0%)
+    ),
+    url('/projects/old.png');
+  background-size: cover;
+  height: 10rem;
+  width: 95%;
+}
+
+.pic-div7:hover {
+  background: linear-gradient(
+      to right,
+      hsla(0, 0%, 0%, 0.78),
+      hsla(0, 0%, 0%, 0.75)
+    ),
+    url('/projects/old.png');
+  background-size: cover;
+  transition: all 1s ease;
+}
+
+.pic-div7:hover .text {
+  opacity: 1;
+}
+
+.text {
+  margin-top: 20%;
+  opacity: 0;
+}
+
+/* eighth picture */
+.pic-div8 {
+  background: linear-gradient(
+      to right,
+      hsla(0, 0%, 0%, 0%),
+      hsla(0, 0%, 0%, 0%)
+    ),
+    url('/projects/new.png');
+  background-size: cover;
+  height: 10rem;
+  width: 95%;
+}
+
+.pic-div8:hover {
+  background: linear-gradient(
+      to right,
+      hsla(0, 0%, 0%, 0.78),
+      hsla(0, 0%, 0%, 0.75)
+    ),
+    url('/projects/new.png');
+  background-size: cover;
+  transition: all 1s ease;
+}
+
+.pic-div8:hover .text {
+  opacity: 1;
+}
+
+.text {
+  margin-top: 20%;
+  opacity: 0;
 }
 
 .text-div {
