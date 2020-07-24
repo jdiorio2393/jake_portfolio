@@ -12,8 +12,8 @@ const About = () => {
 
         {/* <div className='title'>{`</h3>`}</div>
         <div className='name'>{`<h1>`}</div> */}
-        <h1 data-text='Jake Diorio'>
-          <span style={{ fontSize: '5rem' }}>
+        <h1 className='JakeDiorio'>
+          <span className='header-text'>
             My name is <span style={{ color: '#bd0000' }}>Jake.</span>
           </span>{' '}
           <br></br> I'm a web developer & designer based in NY.

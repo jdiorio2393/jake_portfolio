@@ -57,13 +57,14 @@ a > .nav-text:hover {
   top: 0;
   bottom: 0;
   width: 10.5em;
-  background: #101010;
+  background: linear-gradient(0deg, #490005, #610107, #9e000b);
   z-index: 999;
+  border-right: 1px solid #ff000047;
 }
 
 .logo {
   text-transform: Capitalize;
-  font: 300 1em 'Source Sans Pro', Helvetica, Arial, sans-serif;
+  font: 300 1.3em 'Source Sans Pro', Helvetica, Arial, sans-serif;
   text-align: center;
   padding: 0;
   margin-top: 2rem;
@@ -88,6 +89,10 @@ a > .nav-text:hover {
   transition: 0.15s linear color;
 }
 
+.main-nav {
+  margin-top: 8rem;
+}
+
 .main-nav ul {
   border-top: solid 1px #3c3735;
 }
@@ -97,7 +102,7 @@ a > .nav-text:hover {
 .main-nav a {
   padding: 1.5em 0;
   color: #dfdbd9;
-  font: 400 1.125em 'Source Sans Pro', Helvetica, Arial, sans-serif;
+  font: 400 1.3em 'Source Sans Pro', Helvetica, Arial, sans-serif;
   text-align: center;
   /* text-transform: lowercase; */
 }
@@ -106,13 +111,22 @@ a > .nav-text:hover {
 }
 
 li a:hover {
-  color: red !important;
   text-decoration: none !important;
 }
 
-.social-links {
-  /* border-bottom: solid 1px #3c3735; */
-  margin-top: 2rem;
+.icon-text {
+  /* display: inline; */
+  visibility: hidden;
+  height: 0;
+}
+
+li a:hover .icon-text {
+  visibility: visible;
+  transition: all 1s ease;
+}
+
+.github-img {
+  width: 100%;
 }
 
 .social-links li {
@@ -154,7 +168,7 @@ li a:hover {
   width: 100%;
   height: 100%;
   /* border-right: solid 5px red !important; */
-  background: #33313033;
+  background: #0000001c;
   transition: 0.35s ease left;
 }
 .list-hover-slide a.is-current:before,
@@ -163,10 +177,10 @@ li a:hover {
 }
 
 .profile-pic {
-  width: 60%;
+  width: 81%;
   height: auto;
   border-radius: 100px;
-  margin-top: 4rem;
+  margin-top: 3rem;
 }
 
 /* .main-body {
@@ -205,20 +219,11 @@ h1 {
 
 h3 {
   font-family: 'brandon-grotesque', sans-serif;
-  font-size: 1.2em !important;
+  font-size: 1.4em !important;
   font-weight: 400;
   color: white;
   /* letter-spacing: 0.2em; */
   /* padding: 5% 0; */
-}
-
-h3.web-design {
-  font-size: 2.5rem !important;
-}
-
-h3.mobile-ordering {
-  font-size: 2.5rem !important;
-  margin-top: 5%;
 }
 
 h4 {
@@ -235,4 +240,28 @@ a {
 p {
   font-family: 'brandon-grotesque', sans-serif;
   color: white;
+}
+
+@media (min-width: 1441px) and (max-width: 1536px) {
+  .main-nav {
+    margin-top: 3rem;
+  }
+}
+
+@media (min-width: 1367px) and (max-width: 1440px) {
+  h3 {
+    font-size: 1.3em !important;
+  }
+  .main-nav {
+    margin-top: 4rem;
+  }
+}
+
+@media (max-width: 1366px) {
+  h3 {
+    font-size: 1.1em !important;
+  }
+  .main-nav {
+    margin-top: 3rem;
+  }
 }

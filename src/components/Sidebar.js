@@ -29,7 +29,7 @@ const Sidebar = () => {
                 {/* eslint-disable-next-line */}
                 <a href='/'>
                   <i className='fas fa-home' aria-hidden='true'></i>
-                  <p style={{ display: 'none' }}>about</p>
+                  <p className='icon-text'>Home</p>
                 </a>
               </li>
               <li>
@@ -37,35 +37,38 @@ const Sidebar = () => {
 
                 <a href='/about'>
                   <i className='fas fa-user' aria-hidden='true'></i>
+                  <p className='icon-text'>About</p>
                 </a>
               </li>
               <li>
                 {/* eslint-disable-next-line */}
                 <a href='/my-work'>
                   <i className='fas fa-laptop-code' aria-hidden='true'></i>
+                  <p className='icon-text'>Work</p>
                 </a>
               </li>
               <li>
                 {/* eslint-disable-next-line */}
-                <a href=''>
+                <a href='/contact'>
                   <i
                     className='fas fa-envelope-open-text'
                     aria-hidden='true'
                   ></i>
+                  <p className='icon-text'>Contact</p>
                 </a>
               </li>
             </nav>
           </ul>
-          <ul className='social-links  unstyled list-hover-slide text-center'>
+          {/* <ul className='social-links  unstyled list-hover-slide text-center'>
             <li>
-              {/* eslint-disable-next-line */}
-              <a href='#'>Twitter</a>
+              
+              <img class='github-img' src='/github.png'></img>
             </li>
             <li>
-              {/* eslint-disable-next-line */}
+              
               <a href='#'>Google+</a>
             </li>
-          </ul>
+          </ul> */}
         </div>
       </header>
     </Fragment>

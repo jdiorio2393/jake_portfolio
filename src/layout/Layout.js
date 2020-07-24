@@ -4,6 +4,7 @@ import Nav from '../components/Sidebar';
 import About from '../components/about';
 import AboutMe from '../components/aboutMe';
 import Ribbon from '../components/ribbon/ribbon';
+import Contact from '../components/contact/contact';
 import Rain from '../components/rain';
 import Projects from '../components/projects/projects';
 import { CSSTransition, TransitionGroup } from 'react-transition-group';
@@ -24,6 +25,7 @@ const Layout = () => {
             <Route exact path='/' component={About} />
             <Route exact path='/about' component={AboutMe} />
             <Route exact path='/my-work' component={Projects} />
+            <Route exact path='/contact' component={Contact} />
           </Switch>
         </CSSTransition>
       </TransitionGroup>

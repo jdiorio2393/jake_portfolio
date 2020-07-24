@@ -3,14 +3,13 @@
   left: 20%;
   top: 10%;
   z-index: 15;
+  width: 60vw;
 }
 
 .work-pic {
-  display: inline-block;
+  justify-self: center;
   max-width: 30%;
   height: auto;
-  padding-right: 2%;
-  padding-bottom: 2%;
   background-color: rgba(0, 0, 0, 0.582);
 }
 
@@ -21,7 +20,7 @@
   gap: 13px 0px;
   align-items: center;
   grid-template-areas: '. . .' '. . .';
-  width: 80%;
+  /* width: 80%; */
 }
 
 .pic-container2 {
@@ -29,7 +28,16 @@
   grid-template-columns: 1fr 1fr 1fr;
   gap: 13px 0px;
   align-items: center;
-  width: 80%;
+  /* width: 80%; */
+}
+
+h3.web-design {
+  font-size: 2.5rem !important;
+}
+
+h3.mobile-ordering {
+  font-size: 2.5rem !important;
+  margin-top: 10%;
 }
 
 /* first picture */
@@ -42,7 +50,7 @@
     ),
     url('/projects/stellarledgers.png');
   background-size: cover;
-  height: 10rem;
+  height: 13rem;
   width: 95%;
 }
 
@@ -70,7 +78,7 @@
     ),
     url('/projects/lookout.png');
   background-size: cover;
-  height: 10rem;
+  height: 13rem;
   width: 95%;
 }
 
@@ -103,7 +111,7 @@
     ),
     url('/projects/yellowdoor.png');
   background-size: cover;
-  height: 10rem;
+  height: 13rem;
   width: 95%;
 }
 
@@ -136,7 +144,7 @@
     ),
     url('/projects/mediakeys.png');
   background-size: cover;
-  height: 10rem;
+  height: 13rem;
   width: 95%;
 }
 
@@ -169,7 +177,7 @@
     ),
     url('/projects/gmtb.png');
   background-size: cover;
-  height: 10rem;
+  height: 13rem;
   width: 95%;
 }
 
@@ -202,7 +210,7 @@
     ),
     url('/projects/snrcreative.png');
   background-size: cover;
-  height: 10rem;
+  height: 13rem;
   width: 95%;
 }
 
@@ -235,7 +243,7 @@
     ),
     url('/projects/old.png');
   background-size: cover;
-  height: 10rem;
+  height: 13rem;
   width: 95%;
 }
 
@@ -268,7 +276,7 @@
     ),
     url('/projects/new.png');
   background-size: cover;
-  height: 10rem;
+  height: 13rem;
   width: 95%;
 }
 
@@ -312,10 +320,6 @@ p.work-description {
   font-size: 1.2rem;
 }
 
-.card {
-  display: inline-block !important;
-}
-
 #stellar {
   transition: all 0.5s ease;
 }
@@ -323,4 +327,14 @@ p.work-description {
 #stellar:hover {
   filter: brightness(40%);
   transition: all 0.5s ease;
+}
+
+@media (max-width: 1366px) {
+  .pic-container > * {
+    height: 11rem;
+  }
+  .pic-div7,
+  .pic-div8 {
+    height: 11rem;
+  }
 }
