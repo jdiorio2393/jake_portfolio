@@ -16,8 +16,9 @@ const About = () => {
           <span className='header-text'>
             My name is <span style={{ color: '#bd0000' }}>Jake.</span>
           </span>{' '}
-          <br></br> I'm a web developer & designer based in NY.
+          {/* <br></br> */}
         </h1>
+        <h1>I'm a web developer & designer based in NY.</h1>
         <div className='title'>{`</h1>`}</div>
         <div className='github-btn'>
           <div className='title'>{`<button>`}</div>
