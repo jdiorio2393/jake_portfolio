@@ -14,7 +14,7 @@
   color: #7f7f7f;
   font-family: 'La Belle Aurore', cursive;
   font-style: italic;
-  transform: translate(15%, 100%);
+  transform: translate(4%, 100%);
   font-size: 18px;
   overflow: hidden !important;
 }
@@ -26,7 +26,7 @@
   font-size: 18px;
   position: absolute;
   bottom: 5%;
-  right: 82%;
+  right: 84%;
   overflow: hidden;
 }
 
@@ -153,6 +153,14 @@ a.gitbtn:active {
     left: 68%;
     top: 31%;
   }
+
+  .o-div {
+    transform: translate(2%, 100%);
+  }
+
+  .c-div {
+    right: 82%;
+  }
 }
 
 @media (min-width: 1281px) and (max-width: 1366px) {
@@ -169,5 +177,49 @@ a.gitbtn:active {
   }
   .avatar {
     left: 70%;
+  }
+  .c-div {
+    right: 79%;
+  }
+}
+
+@media (max-width: 1280px) {
+  .about {
+    transform: translate(-35%, 30%);
+  }
+  a.gitbtn {
+    letter-spacing: 0.1rem !important;
+  }
+  .o-div {
+    transform: translate(2%, 100%);
+  }
+
+  .c-div {
+    right: 80%;
+  }
+}
+
+@media (max-width: 1024px) {
+  .header-text {
+    font-size: 4rem;
+  }
+  .h1 {
+    font-size: 1.8rem;
+  }
+  .avatar {
+    left: 71%;
+  }
+  .avatar-img {
+    width: 100%;
+  }
+  .about {
+    top: 14%;
+    left: 44%;
+  }
+  .o-div {
+    transform: translate(2%, 100%);
+  }
+  .c-div {
+    right: 79%;
   }
 }

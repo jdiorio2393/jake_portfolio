@@ -17,16 +17,30 @@
   left: 80%;
   top: 50%;
   transform: translate(-70%, -25%);
+  z-index: 999;
 }
 
 .about-image {
   max-width: 100%;
 }
 
-@media (max-width: 1366px) {
+@media (min-width: 1281px) and (max-width: 1366px) {
   .aboutMe {
-    top: 20%;
+    top: 22% !important;
     left: 25%;
     z-index: 10;
+  }
+}
+
+@media (max-width: 1280px) {
+  h3 {
+    font-size: 1.2rem !important;
+  }
+  .aboutMe {
+    top: 20%;
+  }
+
+  .about-img-div {
+    left: 87%;
   }
 }
