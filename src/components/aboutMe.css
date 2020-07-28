@@ -32,7 +32,7 @@
   }
 }
 
-@media (max-width: 1280px) {
+@media (min-width: 900px) and (max-width: 1280px) {
   h3 {
     font-size: 1.2rem !important;
   }
@@ -42,5 +42,23 @@
 
   .about-img-div {
     left: 87%;
+  }
+}
+
+@media (max-width: 415px) and (max-height: 896px) {
+  .about-img-div {
+    display: none;
+  }
+  .about-text {
+    max-width: 92%;
+    letter-spacing: 0.1rem;
+    line-height: 1.3rem;
+  }
+  .aboutMe {
+    top: 14%;
+    left: 15%;
+  }
+  h1.AboutMe {
+    font-size: 1.3rem !important;
   }
 }

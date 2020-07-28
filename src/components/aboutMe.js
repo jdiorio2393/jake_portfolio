@@ -8,7 +8,7 @@ const AboutMe = () => {
       <div className='o-div'>{`<div>`}</div>
       <div className='aboutMe'>
         <div className='title'>{`<h1>`}</div>
-        <h1 data-text='Jake Diorio'>
+        <h1 className='AboutMe'>
           <span style={{ fontSize: '5rem', color: '#bd0000' }}>About Me</span>
         </h1>
         <div className='title'>{`</h1>`}</div>
